@@ -115,7 +115,7 @@ def createContextFunction():
             default_tz["name"] = tz
         rng = get_rng(start, default_tz)
         try:
-            points_his = get_histories(point_id, )
+            points_his = get_histories(point_id, rng)
         except Exception as e:
             print(e)
             print("No records found for " + point_id + " in time range " + rng)
