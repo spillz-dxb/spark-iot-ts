@@ -197,7 +197,7 @@ def process_rdd(rdd):
 
         def clean_raw_value(value, unit, kind):
             if "Bool" == kind:
-                if "true" == value:
+                if "true" == value.lower():
                     return 1.0
                 else:
                     return 0.0

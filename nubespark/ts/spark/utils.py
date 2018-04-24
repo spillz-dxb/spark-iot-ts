@@ -1,3 +1,5 @@
+from ts.flint.clocks import uniform
+
 __author__ = 'topsykretts'
 
 from pyspark.sql.functions import col
@@ -344,7 +346,7 @@ def resample(sqlContext, df, time_in_sec=900, tolerance="1days", key_cols=None):
         key_cols = ["siteRef", "equipRef", "pointName"]
 
     min_max = df.select(func.min("timestamp").alias("min"), func.max("timestamp").alias("max")).collect()
-    clk_pulse = uniform(sqlContext, frequency, offset='0s', begin_date_time=str(min_max[0][0].replace(second=0, 
+    clk_pulse = uniform(sqlContext, frequency, offset='0s', begin_date_time=str(min_max[0][0].replace(second=0,
                         microsecond=0)), end_date_time=str(min_max[0][1].replace(second=0, microsecond=0)))
     keys_df = df.select(key_cols).distinct()
     clk_pulse_keys = clk_pulse.join(func.broadcast(keys_df))   
