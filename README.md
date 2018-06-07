@@ -22,7 +22,7 @@ Some of the features of this project are:
 4. [Apache Kafka](#apache-kafka)
 5. [Spark Thrift Server](#spark-thrift-server)
 6. [Zeppelin Notebook](#zeppelin-notebook)
-7. [Superset](#superset)
+7. [Superset](#superset) NOT USED!!!!!
 
 ### Apache Spark
 [Apache Spark](https://spark.apache.org/) along with [FiloDB](https://github.com/filodb/FiloDB) library and
@@ -69,7 +69,7 @@ It is used to connect histories in FiloDB and metadata in elasticsearch with vis
 
 [Apache Zeppelin](https://zeppelin.apache.org) is used to write business logic and rules and perform other data analytics.
 
-### Superset
+### Superset NOT USED!!!!!
 > Apache Superset (incubating) is a modern, enterprise-ready business intelligence web application
 
 [Apache Superset](https://github.com/apache/incubator-superset) is used as visualization tool by connecting with Spark thrift server.
