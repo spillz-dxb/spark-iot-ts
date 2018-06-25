@@ -8,9 +8,9 @@ http_args = {
         "Accept": "application/json"
     }
 }
-session = Niagara4HaystackSession(uri="http://175.45.115.115",
-                                  username="admin1",
-                                  password="Enviroman1",
+session = Niagara4HaystackSession(uri="http://8888888",
+                                  username="888",
+                                  password="88888",
                                   pint=False,
                                   grid_format="json",
                                   http_args=http_args
