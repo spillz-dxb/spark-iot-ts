@@ -7,9 +7,9 @@ __author__ = 'topsykretts'
 server_lookup = {
     "niagara_iot_scp_apr_v1": {
         "implementation": "n4",
-        "uri": "http://175.45.115.115",
-        "username": "admin1",
-        "password": "Enviroman1",
+        "uri": "http://***********",
+        "username": "**********",
+        "password": "*******",
         "pint": False
     }
 }
