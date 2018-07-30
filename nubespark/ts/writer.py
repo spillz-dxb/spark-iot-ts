@@ -18,7 +18,7 @@ class Writer(object):
         self._dataset = dataset
         self._row_keys = row_keys
         # default values
-        self._mode = "overwrite"
+        self._mode = "append"
         self._chunk_size = "100"
         self._partition_keys = ":string %(dataset)s" % ({"dataset": dataset})
 
