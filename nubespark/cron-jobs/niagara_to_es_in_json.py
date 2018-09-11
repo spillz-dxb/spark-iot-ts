@@ -9,8 +9,8 @@ http_args = {
     }
 }
 session = Niagara4HaystackSession(uri="http://175.45.115.115",
-                                  username="admin1",
-                                  password="Enviroman1",
+                                  username="333",
+                                  password="333",
                                   pint=False,
                                   grid_format="json",
                                   http_args=http_args
